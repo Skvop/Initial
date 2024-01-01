@@ -12,3 +12,5 @@ print(third)
 print("Let's add them! : " + str(first + second + third))
 
 print("Or multiply : " + str(first * second * third))
+
+print('haloooouuu')
