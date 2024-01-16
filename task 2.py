@@ -12,17 +12,26 @@
 #     print(material * 39.370)
 # else:
 #     print('Not correct request.')
-try:
-    num1 = int(input("First number : "))
-    num2 = int(input("Second number : "))
+# try:
+#     num1 = int(input("First number : "))
+#     num2 = int(input("Second number : "))
+#
+#     if num1 == num2:
+#         print(f"{num1} = {num2}")
+#     elif num1<num2:
+#         print(f"{num1}, {num2}")
+#     else:
+#         print(f"{num2}, {num1}")
+# # except ValueError as error:
+# #     raise Exception("Use only integer numbers !")
+# except Exception as error:
+#     print(f"Error : {error}")
+repeat_count = 0
 
-    if num1 == num2:
-        print(f"{num1} = {num2}")
-    elif num1<num2:
-        print(f"{num1}, {num2}")
-    else:
-        print(f"{num2}, {num1}")
-# except ValueError as error:
-#     raise Exception("Use only integer numbers !")
-except Exception as error:
-    print(f"Error : {error}")
+str_enter = input("Enter string: \n")
+symb_srch = input("What symbol to search?: \n")
+
+for i in range(len(str_enter)):
+    if str_enter[i] == symb_srch :
+        repeat_count += 1
+print(f"The {symb_srch} symbol repeats {repeat_count} times.")

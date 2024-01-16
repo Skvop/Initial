@@ -15,27 +15,37 @@
 #     print(sum(material4)/3)
 # else:
 #     print('Invalid command, please, restart and follow the instruction.')
-try:
+# try:
+#
+#     day = int(input("Enter the day of the week number"))
+#     match day:
+#         case 1:
+#             print("monday")
+#         case 2:
+#             print("tuesday")
+#         case 3:
+#             print("wednesday")
+#         case 4:
+#             print("thursday")
+#         case 5:
+#             print("friday")
+#         case 6:
+#             print("saturday")
+#         case 7:
+#             print("sunday")
+#         case _:
+#             print("Incorrect number")
+#
+#
+# except Exception as ex:
+#     print("Error : " + str(ex))
+num_count = 0
+str_count = 0
+sentence = input("Enter string: \n")
+for i in range(len(sentence)):
+    if sentence[i].isalpha():
+        str_count += 1
+    elif sentence[i].isnumeric():
+        num_count += 1
+print(f"There are {num_count} digits and {str_count} letters")
 
-    day = int(input("Enter the day of the week number"))
-    match day:
-        case 1:
-            print("monday")
-        case 2:
-            print("tuesday")
-        case 3:
-            print("wednesday")
-        case 4:
-            print("thursday")
-        case 5:
-            print("friday")
-        case 6:
-            print("saturday")
-        case 7:
-            print("sunday")
-        case _:
-            print("Incorrect number")
-
-
-except Exception as ex:
-    print("Error : " + str(ex))
